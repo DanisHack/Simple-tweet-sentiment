@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action='/testSentiment', method='get')
+  p
+    | Enter a phrase to evaluate:
+    input(type='text', name='phrase')
+    br
+    input(type='submit', value='Send')
+
